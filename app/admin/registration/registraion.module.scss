@@ -1,0 +1,31 @@
+.registration {
+  @apply mx-auto max-w-screen-lg;
+
+  &_title {
+    @apply text-2xl my-2 text-center;
+  }
+
+  &_form {
+    @apply bg-gray-400 p-4 rounded space-y-4;
+
+    &_content {
+      @apply text-xl flex flex-col my-2;
+    }
+
+    &_label {
+      @apply cursor-pointer text-lg text-white;
+    }
+
+    &_input {
+      @apply text-lg p-1 rounded;
+    }
+
+    &_password_check {
+      @apply text-red-600 text-lg;
+    }
+
+    &_actions {
+      @apply flex justify-end space-x-2;
+    }
+  }
+}

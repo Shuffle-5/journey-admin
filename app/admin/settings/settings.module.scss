@@ -1,0 +1,55 @@
+.settings {
+  @apply mx-auto max-w-screen-lg bg-gray-400 p-4 rounded space-y-12;
+
+  &_title {
+    @apply text-2xl my-2 text-center;
+  }
+
+  &_form {
+    @apply space-y-4;
+
+    &_content {
+      @apply text-xl flex flex-col my-2;
+    }
+
+    &_label {
+      @apply cursor-pointer text-lg text-white;
+    }
+
+    &_input {
+      @apply text-lg p-1 rounded;
+    }
+
+    &_image {
+      @apply p-1 border border-gray-100;
+    }
+
+    &_actions {
+      @apply flex justify-end space-x-2;
+    }
+  }
+
+  &_nav {
+    @apply grid grid-cols-9 gap-4;
+
+    &_item {
+      @apply col-span-4 flex flex-col space-y-1;
+    }
+
+    &_delete {
+      @apply col-span-1 bg-red-500;
+    }
+
+    &_password_check {
+      @apply text-red-600 text-lg;
+    }
+
+    &_label {
+      @apply cursor-pointer text-lg text-white;
+    }
+
+    &_input {
+      @apply text-lg p-1 rounded;
+    }
+  }
+}

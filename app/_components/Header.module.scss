@@ -1,0 +1,41 @@
+.container {
+  @apply p-2;
+}
+
+.container.active {
+  box-shadow: 2px 2px 4px #e1e1e1;
+  border: 1px solid #e1e1e1;
+  backdrop-filter: blur(20px);
+}
+
+.container.inactive {
+  @apply bg-transparent;
+}
+
+.header {
+  @apply flex items-center justify-between;
+}
+
+.nav {
+  @apply space-x-6 hidden md:flex items-center;
+
+  &_mobile {
+    @apply items-center flex flex-col rounded-md space-x-0 space-y-4 justify-between text-xl md:hidden md:space-x-4 sm:space-y-0 sm:flex-row;
+
+    &_button {
+      @apply text-gray-500 flex p-2 border border-gray-500 md:hidden rounded-md;
+    }
+  }
+}
+
+.avatar {
+  transition: all .2s ease;
+  pointer-events: none;
+
+  &:hover {
+    transform: scale(1.02);
+  }
+  &:active {
+    transform: scale(0.98);
+  }
+}
