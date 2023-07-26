@@ -63,6 +63,7 @@ const Settings: NextPage = () => {
     e: React.MouseEvent<HTMLButtonElement, MouseEvent>,
     id: number
   ) => {
+    e.preventDefault()
     const filteredNewItems = [...newBlog.navItems]
     filteredNewItems.splice(id, 1)
 
