@@ -6,7 +6,7 @@ import { useRecoilState } from 'recoil'
 import { userAtom } from '@/store/user.atom'
 import { useAuth } from '@/hooks/useAuth'
 
-export default function DashboardLayout({
+export default function SettingsLayout({
   children // will be a page or nested layout
 }: {
   children: ReactNode

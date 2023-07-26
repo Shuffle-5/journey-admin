@@ -1,0 +1,35 @@
+.new_post {
+  @apply p-4 grid grid-cols-2 gap-4;
+
+  &_markdown {
+    @apply col-span-1 bg-gray-100 p-2 rounded-lg;
+  }
+
+  &_text {
+    @apply col-span-1 bg-gray-100 rounded-lg p-2 flex flex-col space-y-4;
+  }
+
+  &_input {
+    @apply text-lg p-1 rounded;
+  }
+
+  &_form {
+    @apply space-y-4;
+
+    &_content {
+      @apply text-xl;
+    }
+
+    &_label {
+      @apply cursor-pointer text-lg text-black mx-4;
+    }
+
+    &_input {
+      @apply text-lg p-1 rounded bg-gray-100 mx-4;
+    }
+  }
+
+  &_actions {
+    @apply mt-2;
+  }
+}
